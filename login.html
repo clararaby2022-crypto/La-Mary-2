@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="es">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <script src="tema.js">
+  </script>
+  <link href="assets/vendor/bootstrap.min.css" rel="stylesheet"/>
+  <link href="estilos.css" rel="stylesheet"/>
+  <!-- ICONOS FONT AWESOME -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet"/>
+  <title>
+   Iniciar sesión | Veterinaria La Mary 2
+  </title>
+  <script src="sesion.js">
+  </script>
+ </head>
+ <body>
+  <header>
+   <nav aria-label="Navegación principal" class="navbar navbar-expand-xl navbar-dark">
+    <div class="container-fluid px-0">
+     <div class="marca">
+      <img alt="Logo Veterinaria La Mary 2" class="logo-huella" src="./assets/imag/logo_la_mary2.png"/>
+      <div class="marca-texto">
+       <h1>
+        Veterinaria La Mary 2
+       </h1>
+       <p>
+        Cuidamos su salud, acompañamos su vida.
+       </p>
+      </div>
+     </div>
+     <button aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir o cerrar menú" class="navbar-toggler" data-bs-target="#menuPrincipal" data-bs-toggle="collapse" type="button">
+      <span class="navbar-toggler-icon">
+      </span>
+     </button>
+     <div class="collapse navbar-collapse" id="menuPrincipal">
+      <ul class="navbar-nav ms-auto mt-3 mt-xl-0">
+       <li class="nav-item">
+        <a class="nav-link" href="index.html">
+         Inicio
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="institucional.html">
+         Institucional
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="contacto.html">
+         Contacto
+        </a>
+       </li>
+       <li class="nav-item d-none" data-admin>
+<a class="nav-link" href="mascotas.html">
+         Mascotas
+        </a>
+       </li>
+       <li class="nav-item d-none" data-admin>
+<a class="nav-link" href="veterinarios.html">
+         Veterinarios
+        </a>
+       </li>
+       <li class="nav-item">
+        <a aria-current="page" class="nav-link active" href="login.html" id="enlace-login">
+         Ingresar
+        </a>
+        <button class="btn btn-outline-light d-none" id="cerrar-sesion" type="button">
+         Cerrar sesión
+        </button>
+       </li>
+       <li class="nav-item d-none" data-admin><a class="nav-link" href="turnos.html">Turnos</a></li><li class="nav-item d-none" data-admin><a class="nav-link" href="historia-clinica.html">Historia clínica</a></li><li class="nav-item">
+        <button aria-label="Activar modo oscuro" aria-pressed="false" class="btn btn-outline-light boton-tema" id="botonTema" type="button">
+         Modo oscuro
+        </button>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </nav>
+  </header>
+  <main>
+   <section aria-labelledby="titulo-login" class="login-contenedor py-5">
+    <div class="card gestion-card">
+     <div class="card-body p-4 p-sm-5">
+      <span class="hero-etiqueta">
+       Administración
+      </span>
+      <h2 id="titulo-login">
+       Iniciar sesión
+      </h2>
+      <p>
+       Ingresá para gestionar mascotas y veterinarios.
+      </p>
+      <div class="alert alert-info small">
+       Acceso de práctica con DummyJSON. Usá las credenciales de ejemplo, no una contraseña personal.
+       <br/>
+       <strong>
+        Usuario:
+       </strong>
+       <code>
+        emilys
+       </code>
+       <br/>
+       <strong>
+        Contraseña:
+       </strong>
+       <code>
+        emilyspass
+       </code>
+      </div>
+      <form id="form-sesion">
+       <div class="mb-3">
+        <label class="form-label" for="nombreUsuario">
+         Usuario
+        </label>
+        <input autocomplete="username" class="form-control" id="nombreUsuario" name="nombreUsuario" required=""/>
+       </div>
+       <div class="mb-3">
+        <label class="form-label" for="contrasenia">
+         Contraseña
+        </label>
+        <input autocomplete="current-password" class="form-control" id="contrasenia" name="contrasenia" required="" type="password"/>
+       </div>
+       <div class="alert alert-danger d-none" id="mensajeError" role="alert">
+       </div>
+       <button class="btn btn-mary w-100" id="botonIniciarSesion" type="submit">
+        Iniciar sesión
+       </button>
+      </form>
+      <p class="small text-secondary mt-3 mb-0">
+       Necesitás conexión a Internet para iniciar sesión. La sesión de práctica dura hasta 30 minutos.
+      </p>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer>
+   <p>
+    © 2026 Veterinaria La Mary 2
+   </p>
+   <p class="footer-frase">
+    Cuidamos su salud, acompañamos su vida.
+   </p>
+  </footer>
+  <script src="assets/vendor/bootstrap.bundle.min.js">
+  </script>
+  <script src="login.js">
+  </script>
+ </body>
+</html>

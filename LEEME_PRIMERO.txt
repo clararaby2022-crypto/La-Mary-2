@@ -1,0 +1,29 @@
+VETERINARIA LA MARY 2 — CUARTA ENTREGA
+
+1. VETERINARIA LA MARY 2 — CUARTA ENTREGA
+
+Requisitos: Python instalado y conexión a Internet para iniciar sesión.
+
+1. Descomprimí todo el ZIP.
+2. Abrí en Visual Studio Code la carpeta veterinaria,
+   donde está el archivo index.html.
+3. Elegí Terminal > Nueva terminal y ejecutá:
+
+   py -m http.server 5173 --bind 127.0.0.1
+
+4. Abrí en el navegador:
+   http://127.0.0.1:5173/
+
+5. Ingresá con la cuenta pública de prueba de DummyJSON:
+   Usuario: emilys
+   Contraseña: emilyspass
+
+Dejá la terminal abierta mientras usás la aplicación.
+Para detener el servidor, presioná Ctrl + C.
+
+Primero registrá mascotas y veterinarios; luego cargá turnos y atenciones.
+La portada muestra los profesionales registrados en este navegador.
+Los datos se guardan localmente. Usá siempre el mismo enlace y puerto.
+
+README.md: integrantes, explicación y alcance.
+
