@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" data-requiere-sesion="" lang="es">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <script src="tema.js">
+  </script>
+  <link href="assets/vendor/bootstrap.min.css" rel="stylesheet"/>
+  <link href="estilos.css" rel="stylesheet"/>
+  <!-- ICONOS FONT AWESOME -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet"/>
+  <title>
+   Historia clínica | Veterinaria La Mary 2
+  </title>
+  <script src="sesion.js">
+  </script>
+ </head>
+ <body data-entidad="historiaClinica">
+  <header>
+   <nav aria-label="Navegación principal" class="navbar navbar-expand-xl navbar-dark">
+    <div class="container-fluid px-0">
+     <div class="marca">
+      <img alt="Logo Veterinaria La Mary 2" class="logo-huella" src="./assets/imag/logo_la_mary2.png"/>
+      <div class="marca-texto">
+       <h1>
+        Veterinaria La Mary 2
+       </h1>
+       <p>
+        Cuidamos su salud, acompañamos su vida.
+       </p>
+      </div>
+     </div>
+     <button aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir o cerrar menú" class="navbar-toggler" data-bs-target="#menuPrincipal" data-bs-toggle="collapse" type="button">
+      <span class="navbar-toggler-icon">
+      </span>
+     </button>
+     <div class="collapse navbar-collapse" id="menuPrincipal">
+      <ul class="navbar-nav ms-auto mt-3 mt-xl-0">
+       <li class="nav-item">
+        <a class="nav-link" href="index.html">
+         Inicio
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="institucional.html">
+         Institucional
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="contacto.html">
+         Contacto
+        </a>
+       </li>
+       <li class="nav-item d-none" data-admin>
+<a  class="nav-link" href="mascotas.html">
+         Mascotas
+        </a>
+       </li>
+       <li class="nav-item d-none" data-admin>
+<a class="nav-link" href="veterinarios.html">
+         Veterinarios
+        </a>
+       </li>
+       <li class="nav-item d-none" data-admin><a class="nav-link" href="turnos.html">Turnos</a></li><li class="nav-item d-none" data-admin><a class="nav-link active" aria-current="page" href="historia-clinica.html">Historia clínica</a></li><li class="nav-item">
+        <a class="nav-link" href="login.html" id="enlace-login">
+         Ingresar
+        </a>
+        <button class="btn btn-outline-light d-none" id="cerrar-sesion" type="button">
+         Cerrar sesión
+        </button>
+       </li>
+       <li class="nav-item">
+        <button aria-label="Activar modo oscuro" aria-pressed="false" class="btn btn-outline-light boton-tema" id="botonTema" type="button">
+         Modo oscuro
+        </button>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </nav>
+  </header>
+  <main><section class="gestion-intro py-4"><span class="hero-etiqueta">Administración</span><h2>Historia clínica</h2><p>Consultá todas las atenciones de cada mascota, de la más reciente a la más antigua.</p></section>
+ <div id="aviso" class="alert d-none" role="status" aria-live="polite"></div>
+ <div class="row g-4"><section class="col-12 col-lg-4"><div class="card gestion-card"><div class="card-body p-4"><h3 class="h4">Registrar atención</h3><form id="form-registro"><div class="mb-3"><label class="form-label" for="mascota">Mascota y dueño</label><select class="form-select" id="mascota" name="mascota" required></select></div><div class="mb-3"><label class="form-label" for="veterinario">Veterinario</label><select class="form-select" id="veterinario" name="veterinario" required></select></div><div class="mb-3"><label class="form-label" for="fechaHora">Fecha y hora de atención</label><input class="form-control" id="fechaHora" name="fechaHora" type="datetime-local" required></div><div class="mb-3"><label class="form-label" for="observaciones">Observaciones</label><textarea class="form-control" id="observaciones" name="observaciones" rows="5" maxlength="4000" required></textarea></div><button class="btn btn-mary" type="submit">Guardar registro</button></form></div></div></section>
+ <section class="col-12 col-lg-8"><div class="card gestion-card"><div class="card-body p-4"><h3 class="h4">Historial de atenciones</h3><div class="mb-3"><label class="form-label" for="filtro-mascota">Historial de una mascota</label><select class="form-select" id="filtro-mascota"></select></div><p id="resultados" aria-live="polite"></p><div class="table-responsive" tabindex="0" role="region" aria-label="Listado de Historia clínica"><table class="table table-striped align-middle"><thead><tr><th scope="col">Fecha y hora</th><th scope="col">Mascota</th><th scope="col">Dueño</th><th scope="col">Veterinario</th><th scope="col">Observaciones</th></tr></thead><tbody id="listado"></tbody></table></div></div></div></section></div></main>
+  <footer>
+   <p>
+    © 2026 Veterinaria La Mary 2
+   </p>
+   <p class="footer-frase">
+    Cuidamos su salud, acompañamos su vida.
+   </p>
+  </footer>
+  <script src="assets/vendor/bootstrap.bundle.min.js">
+  </script>
+  <div aria-describedby="detalle-eliminar" aria-labelledby="titulo-eliminar" class="modal fade" id="modal-eliminar" tabindex="-1">
+   <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+     <div class="modal-header">
+      <h2 class="modal-title fs-5" id="titulo-eliminar">
+       Confirmar eliminación
+      </h2>
+      <button aria-label="Cerrar" class="btn-close" data-bs-dismiss="modal" type="button">
+      </button>
+     </div>
+     <div class="modal-body">
+      <p id="detalle-eliminar">
+      </p>
+      <p class="small text-secondary mb-0">
+       Esta acción no se puede deshacer.
+      </p>
+     </div>
+     <div class="modal-footer">
+      <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">
+       Cancelar
+      </button>
+      <button class="btn btn-danger" id="confirmar-eliminar" type="button">
+       Eliminar registro
+      </button>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script src="gestion.js">
+  </script>
+  
+  <script src="atenciones.js">
+  </script>
+ </body>
+</html>

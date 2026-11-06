@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="es">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <script src="tema.js">
+  </script>
+  <link href="assets/vendor/bootstrap.min.css" rel="stylesheet"/>
+  <link href="estilos.css" rel="stylesheet"/>
+  <!-- ICONOS FONT AWESOME -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet"/>
+  <title>
+   Contacto | Veterinaria La Mary 2
+  </title>
+  <script src="sesion.js">
+  </script>
+ </head>
+ <body>
+  <header>
+   <nav aria-label="Navegación principal" class="navbar navbar-expand-xl navbar-dark">
+    <div class="container-fluid px-0">
+     <div class="marca">
+      <img alt="Logo Veterinaria La Mary 2" class="logo-huella" src="./assets/imag/logo_la_mary2.png"/>
+      <div class="marca-texto">
+       <h1>
+        Veterinaria La Mary 2
+       </h1>
+       <p>
+        Cuidamos su salud, acompañamos su vida.
+       </p>
+      </div>
+     </div>
+     <button aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir o cerrar menú" class="navbar-toggler" data-bs-target="#menuPrincipal" data-bs-toggle="collapse" type="button">
+      <span class="navbar-toggler-icon">
+      </span>
+     </button>
+     <div class="collapse navbar-collapse" id="menuPrincipal">
+      <ul class="navbar-nav ms-auto mt-3 mt-xl-0">
+       <li class="nav-item">
+        <a class="nav-link" href="index.html">
+         Inicio
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="institucional.html">
+         Institucional
+        </a>
+       </li>
+       <li class="nav-item">
+        <a aria-current="page" class="nav-link active" href="contacto.html">
+         Contacto
+        </a>
+       </li>
+       <li class="nav-item d-none" data-admin>
+<a class="nav-link" href="mascotas.html">
+         Mascotas
+        </a>
+       </li>
+       <li class="nav-item d-none" data-admin>
+<a class="nav-link" href="veterinarios.html">
+         Veterinarios
+        </a>
+       </li>
+       <li class="nav-item d-none" data-admin><a class="nav-link" href="turnos.html">Turnos</a></li><li class="nav-item d-none" data-admin><a class="nav-link" href="historia-clinica.html">Historia clínica</a></li><li class="nav-item">
+        <a class="nav-link" href="login.html" id="enlace-login">
+         Ingresar
+        </a>
+        <button class="btn btn-outline-light d-none" id="cerrar-sesion" type="button">
+         Cerrar sesión
+        </button>
+       </li>
+       <li class="nav-item">
+        <button aria-label="Activar modo oscuro" aria-pressed="false" class="btn btn-outline-light boton-tema" id="botonTema" type="button">
+         Modo oscuro
+        </button>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </nav>
+  </header>
+  <main>
+   <!-- PRESENTACIÓN -->
+   <section class="hero-contacto">
+    <span class="hero-etiqueta">
+     Estamos para ayudarte
+    </span>
+    <h2>
+     Contactanos
+    </h2>
+    <p>
+     Si tenés alguna consulta sobre la salud de tu mascota,
+                completá el formulario o comunicate con nosotros.
+    </p>
+   </section>
+   <!-- CONTACTO + FORMULARIO -->
+   <section class="contenedor-contacto">
+    <!-- INFORMACIÓN -->
+    <div class="datos-contacto">
+     <span class="hero-etiqueta">
+      Información
+     </span>
+     <h2>
+      Datos de contacto
+     </h2>
+     <p class="texto-contacto">
+      Podés visitarnos, llamarnos o escribirnos.
+                    Estamos para acompañarte en el cuidado de tu mascota.
+     </p>
+     <div class="dato-contacto">
+      <div class="icono-contacto">
+       <i aria-hidden="true" class="fa-solid fa-location-dot">
+       </i>
+      </div>
+      <div>
+       <h3>
+        Dirección
+       </h3>
+       <p>
+        Calle San Martín 123
+       </p>
+      </div>
+     </div>
+     <div class="dato-contacto">
+      <div class="icono-contacto">
+       <i aria-hidden="true" class="fa-solid fa-phone">
+       </i>
+      </div>
+      <div>
+       <h3>
+        Teléfono
+       </h3>
+       <p>
+        0343 43256789
+       </p>
+      </div>
+     </div>
+     <div class="dato-contacto">
+      <div class="icono-contacto">
+       <i aria-hidden="true" class="fa-regular fa-envelope">
+       </i>
+      </div>
+      <div>
+       <h3>
+        Email
+       </h3>
+       <p>
+        veterinaria@ejemplo.com
+       </p>
+      </div>
+     </div>
+     <div class="dato-contacto">
+      <div class="icono-contacto">
+       <i aria-hidden="true" class="fa-regular fa-clock">
+       </i>
+      </div>
+      <div>
+       <h3>
+        Horario
+       </h3>
+       <p>
+        Lunes a viernes
+        <br/>
+        8:00 a 20:00
+       </p>
+      </div>
+     </div>
+    </div>
+    <!-- FORMULARIO -->
+    <div class="formulario-contacto">
+     <span class="hero-etiqueta">
+      Escribinos
+     </span>
+     <h2>
+      Enviá tu consulta
+     </h2>
+     <p class="small text-secondary" id="aviso-demo">
+      Formulario de práctica: los datos no se envían ni se guardan.
+     </p>
+     <form aria-describedby="aviso-demo" id="formConsulta">
+      <div class="grupo-formulario">
+       <label class="form-label" for="nombre">
+        Nombre y apellido
+       </label>
+       <input class="form-control" id="nombre" name="nombre" placeholder="Ingresá tu nombre" required="" type="text"/>
+      </div>
+      <div class="grupo-formulario">
+       <label class="form-label" for="email">
+        Email
+       </label>
+       <input class="form-control" id="email" name="email" placeholder="ejemplo@email.com" required="" type="email"/>
+      </div>
+      <div class="grupo-formulario">
+       <label class="form-label" for="telefono">
+        Teléfono
+       </label>
+       <input class="form-control" id="telefono" name="telefono" placeholder="Ingresá tu teléfono" type="tel"/>
+      </div>
+      <div class="grupo-formulario">
+       <label class="form-label" for="mascota">
+        Nombre de la mascota
+       </label>
+       <input class="form-control" id="mascota" name="mascota" placeholder="Ej: Toby" type="text"/>
+      </div>
+      <div class="grupo-formulario">
+       <label class="form-label" for="tipo">
+        Tipo de mascota
+       </label>
+       <select class="form-select" id="tipo" name="tipo">
+        <option value="">
+         Seleccioná una opción
+        </option>
+        <option value="perro">
+         Perro
+        </option>
+        <option value="gato">
+         Gato
+        </option>
+        <option value="conejo">
+         Conejo
+        </option>
+        <option value="otro">
+         Otro
+        </option>
+       </select>
+      </div>
+      <div class="grupo-formulario">
+       <label class="form-label" for="motivo">
+        Motivo de consulta
+       </label>
+       <select class="form-select" id="motivo" name="motivo">
+        <option value="">
+         Seleccioná un motivo
+        </option>
+        <option value="consulta">
+         Consulta veterinaria
+        </option>
+        <option value="vacunacion">
+         Vacunación
+        </option>
+        <option value="control">
+         Control
+        </option>
+        <option value="otro">
+         Otro
+        </option>
+       </select>
+      </div>
+      <div class="grupo-formulario grupo-completo">
+       <label class="form-label" for="mensaje">
+        Mensaje
+       </label>
+       <textarea class="form-control" id="mensaje" name="mensaje" placeholder="Contanos brevemente tu consulta" required=""></textarea>
+      </div>
+      <button class="btn btn-mary" type="submit">
+       Enviar consulta
+       <i aria-hidden="true" class="fa-solid fa-paper-plane">
+       </i>
+      </button>
+     </form>
+     <div class="alert alert-info mt-3 d-none" id="resultadoConsulta" role="status" tabindex="-1">
+      La consulta pasó la validación. Esta demostración no envía mensajes.
+     </div>
+    </div>
+   </section>
+   <!-- REDES -->
+   <section class="redes-contacto">
+    <span class="hero-etiqueta">
+     También podés encontrarnos
+    </span>
+    <h2>
+     Seguinos en nuestras redes
+    </h2>
+    <p>
+     Conocé nuestras novedades y consejos
+                para el cuidado de tus mascotas.
+    </p>
+    <div class="botones-redes">
+     <a href="https://www.facebook.com/" rel="noopener noreferrer" target="_blank">
+      <i aria-hidden="true" class="fa-brands fa-facebook-f">
+      </i>
+      Facebook
+     </a>
+     <a href="https://www.instagram.com/" rel="noopener noreferrer" target="_blank">
+      <i aria-hidden="true" class="fa-brands fa-instagram">
+      </i>
+      Instagram
+     </a>
+    </div>
+   </section>
+  </main>
+  <footer>
+   <p>
+    © 2026 Veterinaria La Mary 2
+   </p>
+   <p class="footer-frase">
+    Cuidamos su salud, acompañamos su vida.
+   </p>
+  </footer>
+  <script src="assets/vendor/bootstrap.bundle.min.js">
+  </script>
+  <script src="contacto.js">
+  </script>
+ </body>
+</html>

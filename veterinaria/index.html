@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="es">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <script src="tema.js">
+  </script>
+  <link href="assets/vendor/bootstrap.min.css" rel="stylesheet"/>
+  <link href="estilos.css" rel="stylesheet"/>
+  <!-- ICONOS FONT AWESOME -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet"/>
+  <title>
+   Veterinaria La Mary 2
+  </title>
+  <script src="sesion.js">
+  </script>
+ </head>
+ <body>
+  <header>
+   <nav aria-label="Navegación principal" class="navbar navbar-expand-xl navbar-dark">
+    <div class="container-fluid px-0">
+     <div class="marca">
+      <img alt="Logo Veterinaria La Mary 2" class="logo-huella" src="./assets/imag/logo_la_mary2.png"/>
+      <div class="marca-texto">
+       <h1>
+        Veterinaria La Mary 2
+       </h1>
+       <p>
+        Cuidamos su salud, acompañamos su vida.
+       </p>
+      </div>
+     </div>
+     <button aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir o cerrar menú" class="navbar-toggler" data-bs-target="#menuPrincipal" data-bs-toggle="collapse" type="button">
+      <span class="navbar-toggler-icon">
+      </span>
+     </button>
+     <div class="collapse navbar-collapse" id="menuPrincipal">
+      <ul class="navbar-nav ms-auto mt-3 mt-xl-0">
+       <li class="nav-item">
+        <a aria-current="page" class="nav-link active" href="index.html">
+         Inicio
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="institucional.html">
+         Institucional
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="contacto.html">
+         Contacto
+        </a>
+       </li>
+       <li class="nav-item d-none" data-admin>
+<a class="nav-link" href="mascotas.html">
+         Mascotas
+        </a>
+       </li>
+       <li class="nav-item d-none" data-admin>
+<a class="nav-link" href="veterinarios.html">
+         Veterinarios
+        </a>
+       </li>
+       <li class="nav-item d-none" data-admin><a class="nav-link" href="turnos.html">Turnos</a></li><li class="nav-item d-none" data-admin><a class="nav-link" href="historia-clinica.html">Historia clínica</a></li><li class="nav-item">
+        <a class="nav-link" href="login.html" id="enlace-login">
+         Ingresar
+        </a>
+        <button class="btn btn-outline-light d-none" id="cerrar-sesion" type="button">
+         Cerrar sesión
+        </button>
+       </li>
+       <li class="nav-item">
+        <button aria-label="Activar modo oscuro" aria-pressed="false" class="btn btn-outline-light boton-tema" id="botonTema" type="button">
+         Modo oscuro
+        </button>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </nav>
+  </header>
+  <main>
+   <!-- PORTADA -->
+   <section id="hero">
+    <div class="hero-contenido">
+     <span class="hero-etiqueta">
+      Bienvenidos
+     </span>
+     <h2>
+      Brindamos atención y cuidado para tus mascotas.
+     </h2>
+     <p>
+      La salud y el bienestar de tu mascota son nuestra prioridad.
+                    Brindamos atención profesional y acompañamiento en cada etapa.
+     </p>
+     <a class="btn" href="contacto.html">
+      Solicitar consulta
+      <i aria-hidden="true" class="fa-solid fa-arrow-right">
+      </i>
+     </a>
+    </div>
+   </section>
+   <!-- Catálogo: Bootstrap divide cada fila en 12 columnas. -->
+   <section aria-labelledby="titulo-profesionales" class="catalogo py-5"><h2 class="titulo-seccion" id="titulo-profesionales">Nuestros profesionales</h2><label for="buscar-profesional" class="form-label">Buscar por nombre o especialización</label><input id="buscar-profesional" type="search" class="form-control mb-3" placeholder="Nombre o especialización"><p id="estado-profesionales" aria-live="polite"></p><div id="catalogo-profesionales" class="row g-4"></div></section>
+   <!-- PACIENTES -->
+   <section class="galeria-mascotas">
+    <h2 class="titulo-seccion">
+     Nuestros pacientes
+    </h2>
+    <p class="descripcion-seccion">
+     Porque cada mascota merece el mejor cuidado.
+    </p>
+    <div class="contenedor-imagenes">
+     <div class="imagen-mascota">
+      <img alt="Perro" src="./assets/imag/img_animal1.png"/>
+     </div>
+     <div class="imagen-mascota">
+      <img alt="Gato" src="./assets/imag/img_animal2.png"/>
+     </div>
+     <div class="imagen-mascota">
+      <img alt="Cachorro" src="./assets/imag/img_animal3.png"/>
+     </div>
+     <div class="imagen-mascota">
+      <img alt="Conejo" src="./assets/imag/img_animal4.png"/>
+     </div>
+    </div>
+   </section>
+   <!-- SERVICIOS -->
+   <section class="servicios">
+    <h2 class="titulo-seccion">
+     Nuestros servicios
+    </h2>
+    <p class="descripcion-seccion">
+     Atención veterinaria pensada para acompañar a tu mascota
+                en cada etapa de su vida.
+    </p>
+    <div class="contenedor-servicios">
+     <div class="tarjeta-servicio">
+      <div class="icono-servicio">
+       <i aria-hidden="true" class="fa-solid fa-stethoscope">
+       </i>
+      </div>
+      <h3>
+       Consultas veterinarias
+      </h3>
+      <p>
+       Atención clínica profesional para perros y gatos.
+      </p>
+     </div>
+     <div class="tarjeta-servicio">
+      <div class="icono-servicio">
+       <i aria-hidden="true" class="fa-solid fa-syringe">
+       </i>
+      </div>
+      <h3>
+       Vacunación
+      </h3>
+      <p>
+       Planes de vacunación y controles sanitarios personalizados.
+      </p>
+     </div>
+     <div class="tarjeta-servicio">
+      <div class="icono-servicio">
+       <i aria-hidden="true" class="fa-solid fa-paw">
+       </i>
+      </div>
+      <h3>
+       Controles
+      </h3>
+      <p>
+       Seguimiento periódico para cuidar la salud de tu mascota.
+      </p>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer>
+   <p>
+    © 2026 Veterinaria La Mary 2
+   </p>
+   <p class="footer-frase">
+    Cuidamos su salud, acompañamos su vida.
+   </p>
+  </footer>
+  <script src="assets/vendor/bootstrap.bundle.min.js">
+  </script>
+ <script src="profesionales.js"></script></body>
+</html>

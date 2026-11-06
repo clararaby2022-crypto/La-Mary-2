@@ -1,0 +1,15 @@
+{
+  "name": "veterinaria",
+  "version": "1.0.0",
+  "description": "Trabajo Final Integrador - Veterinaria La Mary 2",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "vite": "^8.2.2"
+  }
+}
