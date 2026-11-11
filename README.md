@@ -11,7 +11,8 @@ Introducción al Desarrollo Web — UNER, segundo cuatrimestre 2026.
 
 
 ##video de exposición- Cuarta entrega
-Enlace al video de exposición técnica: https://drive.google.com/file/d/1OraGCVjCd9ketrT_b9suCSa8eP5xlmEz/view?usp=sharing
+Enlace al video de exposición técnica: https://youtu.be/6ZUV0Vj0ZKM
+
 
 
 Abrir la dirección que muestre Vite y mantener la terminal abierta.
