@@ -10,6 +10,9 @@ Introducción al Desarrollo Web — UNER, segundo cuatrimestre 2026.
 - Soria, Pablo
 
 ```
+##video de exposición- Cuarta entrega
+Enlace al video de exposición técnica: https://drive.google.com/file/d/1OraGCVjCd9ketrT_b9suCSa8eP5xlmEz/view?usp=sharing
+
 
 Abrir la dirección que muestre Vite y mantener la terminal abierta.
 Se conserva Vite y el archivo de dependencias de la tercera entrega.
