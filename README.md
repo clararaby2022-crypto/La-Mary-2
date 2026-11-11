@@ -9,7 +9,7 @@ Introducción al Desarrollo Web — UNER, segundo cuatrimestre 2026.
 - Lezcano, Jesica
 - Soria, Pablo
 
-```
+
 ##video de exposición- Cuarta entrega
 Enlace al video de exposición técnica: https://drive.google.com/file/d/1OraGCVjCd9ketrT_b9suCSa8eP5xlmEz/view?usp=sharing
 
